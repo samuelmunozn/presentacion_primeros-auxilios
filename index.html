@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Capacitación de primeros auxilios en el entorno laboral. Presenta: Janeth Narváez.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🩺%3C/text%3E%3C/svg%3E">
+<title>Primeros Auxilios | Capacitación — Janeth Narváez</title>
+<style>
+:root{--bg:#F1FAF8;--surf:#fff;--tx:#0B2E33;--mut:#4B6B70;--p:#0E9AA7;--p2:#12B886;--red:#E5484D;--line:#CDE8E4;--soft:#E3F6F2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07181B;--surf:#0F2A2E;--tx:#E6F6F4;--mut:#9CC2C0;--p:#2CC4D1;--p2:#3DDBA0;--red:#FF6B70;--line:#1D4448;--soft:#12363A}}
+:root[data-theme="dark"]{--bg:#07181B;--surf:#0F2A2E;--tx:#E6F6F4;--mut:#9CC2C0;--p:#2CC4D1;--p2:#3DDBA0;--red:#FF6B70;--line:#1D4448;--soft:#12363A}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{height:100%;margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+#app{height:100%;display:flex;flex-direction:column}
+#bar{height:5px;background:var(--line);flex:none}
+#bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--p2));transition:width .5s}
+#stage{flex:1;overflow-y:auto;overflow-x:hidden;padding:clamp(14px,3.5vw,44px)}
+.sl{max-width:1100px;margin:auto;min-height:100%;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.a{animation:up .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i)*.09s)}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+h2{margin:0;font-size:clamp(26px,5vw,48px);line-height:1.1;color:var(--p);letter-spacing:-.5px}
+.sub{margin:0;font-size:clamp(16px,2.4vw,23px);color:var(--mut)}
+.sub.w{color:var(--red);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--surf);border:1px solid var(--line);border-top:5px solid var(--p);border-radius:18px;padding:18px;cursor:pointer;transition:.25s;box-shadow:0 4px 14px #0e9aa714}
+.card:nth-child(2n){border-top-color:var(--p2)}
+.card:nth-child(3n){border-top-color:var(--red)}
+.card:hover,.card.on{transform:translateY(-6px);box-shadow:0 12px 28px #0e9aa73a;background:var(--soft)}
+.card .ic{font-size:34px;margin-bottom:4px}
+.card h3{margin:2px 0 8px;font-size:clamp(18px,2.4vw,24px);letter-spacing:.3px}
+.card p{margin:0;color:var(--mut);font-size:clamp(14px,1.8vw,17px);line-height:1.5}
+.note{background:linear-gradient(90deg,var(--p),var(--p2));color:#fff;border-radius:16px;padding:14px 18px;font-weight:600;font-size:clamp(14px,1.9vw,18px);line-height:1.45}
+.note.w{background:var(--red)}
+ul.l{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ul.l li{background:var(--surf);border:1px solid var(--line);border-left:6px solid var(--p2);border-radius:14px;padding:14px 16px;font-size:clamp(15px,2.1vw,20px);line-height:1.45;cursor:pointer;transition:.25s}
+ul.l li:hover,ul.l li.on{transform:translateX(8px);background:var(--soft);border-left-color:var(--p)}
+.num li{display:flex;gap:14px;align-items:center}
+.num b{flex:none;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;display:grid;place-items:center}
+/* cover */
+.cover{text-align:center;align-items:center}
+.cover h1{margin:0;font-size:clamp(46px,12vw,120px);line-height:.95;font-weight:900;background:linear-gradient(120deg,var(--p),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.cross{width:84px;height:84px;position:relative;animation:bp .9s infinite}
+.cross:before,.cross:after{content:"";position:absolute;background:var(--red);border-radius:8px}
+.cross:before{left:30px;top:0;width:24px;height:84px}.cross:after{top:30px;left:0;height:24px;width:84px}
+.ecg{width:min(640px,92%);height:90px}
+.ecg path{fill:none;stroke:var(--p);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:900;stroke-dashoffset:900;animation:dr 3.2s linear infinite}
+@keyframes dr{to{stroke-dashoffset:-900}}
+.pres{background:var(--surf);border:2px solid var(--p2);border-radius:20px;padding:14px 24px}
+.pres small{display:block;color:var(--mut);letter-spacing:2px;text-transform:uppercase;font-size:12px}
+.pres b{font-size:clamp(20px,3.4vw,30px);color:var(--p)}
+.chip{display:inline-block;background:var(--soft);color:var(--p);border-radius:99px;padding:6px 16px;font-weight:700}
+/* timeline */
+.seg{display:flex;gap:4px;height:16px}
+.seg i{border-radius:8px;background:var(--p);opacity:.85;transition:.3s}
+.seg i:nth-child(2n){background:var(--p2)}.seg i:nth-child(3n){background:var(--red)}
+.seg i:hover{transform:scaleY(1.8)}
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.tl li{display:flex;gap:12px;align-items:center;background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;transition:.25s;font-size:clamp(15px,2vw,19px)}
+.tl li:hover,.tl li.on{transform:scale(1.04);background:var(--soft)}
+.tl b{flex:none;background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;border-radius:12px;padding:8px 10px;font-size:14px;white-space:nowrap}
+/* 123 */
+.call{display:grid;grid-template-columns:minmax(180px,300px) 1fr;gap:24px;align-items:center}
+@media(max-width:700px){.call{grid-template-columns:1fr}}
+.n123{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-size:clamp(60px,13vw,110px);font-weight:900;color:#fff;background:var(--red);position:relative;max-width:260px;margin:auto;width:100%}
+.n123:before,.n123:after{content:"";position:absolute;inset:0;border-radius:50%;border:4px solid var(--red);animation:rg 2s infinite}
+.n123:after{animation-delay:1s}
+@keyframes rg{from{transform:scale(1);opacity:.9}to{transform:scale(1.5);opacity:0}}
+/* cpr */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.stat{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:16px;text-align:center}
+.stat b{display:block;font-size:clamp(34px,6vw,60px);color:var(--red);line-height:1}
+.stat span{color:var(--mut)}
+.heart{font-size:64px;text-align:center;animation:bp var(--d,.545s) infinite}
+@keyframes bp{0%,100%{transform:scale(1)}15%{transform:scale(1.22)}}
+.ctl{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;background:var(--soft);border-radius:16px;padding:12px}
+.ctl input{accent-color:var(--p);flex:1;min-width:140px}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--p);color:#fff;border:0;border-radius:12px;padding:10px 16px;font-weight:700}
+/* quiz */
+.opt{display:block;width:100%;text-align:left;background:var(--surf);color:var(--tx);border:2px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;font-size:clamp(15px,2.1vw,19px);transition:.2s}
+.opt:hover{border-color:var(--p)}
+.opt.ok{background:var(--p2);border-color:var(--p2);color:#fff}
+.opt.bad{background:var(--red);border-color:var(--red);color:#fff;animation:sk .4s}
+@keyframes sk{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.ans{display:none}.ans.show{display:block;animation:up .5s both}
+/* checklist */
+.chk li:before{content:"";display:inline-block;width:22px;height:22px;border:2px solid var(--p);border-radius:6px;vertical-align:-5px;margin-right:12px;transition:.2s}
+.chk li.on:before{background:var(--p2);border-color:var(--p2);content:"✓";color:#fff;text-align:center;line-height:22px;font-weight:900}
+.pg{height:10px;background:var(--line);border-radius:6px;overflow:hidden}.pg i{display:block;height:100%;width:0;background:var(--p2);transition:.4s}
+/* footer */
+#ft{flex:none;display:flex;align-items:center;gap:8px;padding:8px 14px;background:var(--surf);border-top:1px solid var(--line);font-size:12px;color:var(--mut)}
+#ft .t{flex:1;letter-spacing:1px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#ft button{background:var(--soft);color:var(--p);border:0;border-radius:10px;min-width:38px;height:38px;font-size:17px;font-weight:700}
+#ft button:hover{background:var(--p);color:#fff}
+#ct{font-weight:700;color:var(--p);min-width:48px;text-align:center}
+#menu{position:fixed;inset:0;background:var(--bg);z-index:9;padding:calc(20px + env(safe-area-inset-top,0px)) 20px 20px;overflow-y:auto;display:none}
+#menu.show{display:block}
+#menu .g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-top:14px}
+#menu button{background:var(--surf);color:var(--tx);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left}
+#menu button.c{border-color:var(--p2);background:var(--soft)}
+#menu b{color:var(--p);margin-right:6px}
+</style>
+</head>
+<body>
+<div id="app">
+<div id="bar"><i id="pb"></i></div>
+<div id="stage"></div>
+<div id="ft">
+<span class="t">PRIMEROS AUXILIOS EN EL ENTORNO LABORAL | Formación y prevención</span>
+<button id="pv" title="Anterior">‹</button><span id="ct"></span><button id="nx" title="Siguiente">›</button>
+<button id="mn" title="Índice">☰</button><button id="th" title="Tema">◐</button><button id="fs" title="Pantalla completa">⛶</button>
+</div>
+</div>
+<div id="menu"><h2>Índice de la capacitación</h2><div class="g" id="mg"></div></div>
+<script>
+var S=[
+{t:'cover'},
+{h:'Objetivo de la capacitación',s:'Al finalizar, cada participante podrá reconocer una emergencia y activar una respuesta inicial segura.',c:[['👁️','1. Reconocer','Identificar señales de alarma y situaciones que requieren ayuda inmediata.'],['🛡️','2. Proteger','Evitar riesgos para la persona afectada, compañeros y primer respondiente.'],['🤝','3. Actuar','Activar el 123, brindar cuidados básicos y acompañar hasta la llegada de ayuda.']]},
+{t:'time',h:'Ruta de la hora',s:'Una sesión práctica, clara y centrada en decisiones.',l:[[5,'0–5 min','Introducción y prevención'],[10,'5–15 min','Seguridad, evaluación y activación'],[15,'15–30 min','RCP, DEA y atragantamiento'],[15,'30–45 min','Hemorragias, quemaduras y lesiones'],[10,'45–55 min','Emergencias médicas y práctica'],[5,'55–60 min','Repaso y compromiso']]},
+{h:'Primeros auxilios: ¿qué son?',s:'Atención inmediata y temporal mientras llega ayuda especializada.',l:['No reemplazan la valoración ni el tratamiento profesional.','Se realizan con seguridad y dentro de las habilidades de quien ayuda.','La prioridad es preservar la vida, evitar empeorar la lesión y facilitar la atención.','No se necesita hacer todo: lo importante es reconocer, activar y ayudar con seguridad.']},
+{h:'Paso 1 | Seguridad de la escena',s:'Antes de acercarte, detente y observa.',c:[['🔎','Observa','Tránsito, electricidad, humo, fuego, químicos, violencia, objetos cortantes.'],['🧤','Protégete','Usa guantes o barrera si está disponible. No te expongas ni ingreses a un área insegura.'],['📢','Pide apoyo','Activa el plan de emergencias de la empresa y solicita ayuda de brigada/seguridad.']]},
+{t:'call',h:'Paso 2 | Activar ayuda',s:'En Colombia, llama al 123 ante una emergencia que requiera respuesta inmediata.',l:['Indica dirección exacta, sede, piso y punto de acceso.','Describe qué ocurrió, cuántas personas están afectadas y su estado.','Envía a alguien a recibir la ambulancia y despejar el acceso.','Pon el teléfono en altavoz y sigue las instrucciones del operador.']},
+{h:'Paso 3 | Evaluación inicial',s:'Aproximación simple para el primer respondiente.',c:[['🗣️','RESPONDE','¿Está consciente? Habla fuerte y toca suavemente los hombros.'],['🫁','RESPIRA','Observa si respira normalmente. Jadeos aislados no son respiración normal.'],['🩸','SANGRA','Busca hemorragia intensa y controla con presión directa.']],n:['🚨','Si no responde y no respira normalmente: activar 123, pedir DEA e iniciar RCP.'],w:1},
+{h:'Reconocer un paro cardíaco',s:'Persona inconsciente que no respira normalmente o solo jadea.',l:['No pierdas tiempo buscando pulso si eres un respondiente lego.','Pide ayuda en voz alta: “¡Usted llame al 123; usted traiga el DEA!”','Inicia compresiones torácicas en el centro del pecho.','Si no estás entrenado para ventilaciones, realiza RCP solo con manos y sigue al operador.']},
+{t:'cpr',h:'RCP en adultos | Compresiones',s:'Manos en el centro del pecho, sobre la mitad inferior del esternón.'},
+{h:'DEA | Desfibrilador externo automático',s:'El DEA puede ser utilizado por personas sin formación clínica siguiendo sus instrucciones.',c:[['⚡','1. Enciende','Abre el equipo y sigue las instrucciones de voz.'],['🩹','2. Coloca','Pega los parches sobre el pecho desnudo como muestra el dibujo. Seca rápidamente el pecho si está mojado. Retira parches de medicamentos si interfieren con la colocación.'],['✋','3. Aléjate','No tocar durante análisis ni descarga. Después, reanuda RCP inmediatamente.']]},
+{h:'Atragantamiento | Adulto o niño consciente',s:'Distingue obstrucción leve de obstrucción grave.',c:[['😮‍💨','Leve: puede hablar o toser','Anima a toser. No golpees la espalda si la tos es efectiva. Vigila el empeoramiento.'],['🆘','Grave: no puede hablar, respirar o toser','Pide ayuda. Alterna 5 golpes en la espalda y 5 compresiones abdominales. Continúa hasta expulsión o pérdida de respuesta.'],['⚠️','Casos especiales','Embarazo avanzado o no puedes rodear el abdomen: compresiones torácicas. En lactantes: 5 golpes dorsales + 5 compresiones torácicas.']]},
+{h:'Atragantamiento | Lactante menor de 1 año',s:'Nunca realizar compresiones abdominales en un lactante.',sw:1,l:['Sostén al bebé boca abajo sobre el antebrazo, con cabeza más baja que el tronco.','Da 5 golpes firmes entre los omóplatos.','Gira boca arriba y da 5 compresiones torácicas con dos dedos en la mitad inferior del esternón.','Repite. Si pierde respuesta, inicia RCP y mira la boca antes de ventilaciones; retira solo objetos visibles.']},
+{h:'Hemorragia | Control inicial',s:'La hemorragia grave puede poner en riesgo la vida en pocos minutos.',c:[['🩹','Presión directa','Presiona firmemente sobre la herida con gasa o tela limpia. Mantén presión continua.'],['🚫','No retirar','Si se empapa, añade más material encima. No retires objetos incrustados.'],['📞','Escala ayuda','Llama al 123. Torniquete o empaquetamiento solo si se está entrenado y es apropiado.']]},
+{h:'Quemaduras | Enfriar, proteger, derivar',s:'Interrumpe la exposición y evita remedios caseros.',l:['Enfría la quemadura con agua corriente fresca durante 20 minutos, si es posible.','Retira anillos, reloj o ropa no adherida antes de que aparezca hinchazón.','Cubre con apósito limpio, seco y no adherente.','No uses hielo, mantequilla, pasta dental ni revientes ampollas.','Busca atención urgente si es extensa, profunda, eléctrica, química, facial o afecta vías respiratorias.']},
+{h:'Golpes, fracturas y caídas',s:'Inmovilizar y evitar movimientos innecesarios.',c:[['🧍','No movilizar','Si sospechas lesión de cuello o espalda, no muevas a la persona salvo peligro inmediato.'],['🦴','Estabilizar','Sujeta la zona en la posición encontrada. No intentes enderezar ni recolocar.'],['🧊','Frío protegido','Compresa fría envuelta, sin contacto directo con la piel. Evalúa dolor, deformidad y circulación.']]},
+{h:'Desmayo y convulsiones',s:'Mantén la calma, protege y observa.',c:[['😵','Desmayo','Acuesta a la persona si lo tolera, protege de caídas y afloja ropa apretada. Si no recupera pronto o hay signos de alarma, 123.'],['🌀','Convulsión','Retira objetos peligrosos, protege la cabeza y mide el tiempo. No sujetes, no introduzcas nada en la boca. Al terminar, verifica respiración.']],n:['📞','Llama al 123 si dura 5 minutos o más, se repite, es la primera convulsión, hay lesión o dificultad respiratoria.'],w:1},
+{h:'Infarto y accidente cerebrovascular',s:'El tiempo es tejido: activa ayuda, no esperes a que pase.',c:[['❤️‍🔥','Dolor torácico','Presión o dolor en pecho, brazo, mandíbula o espalda; sudor frío, náuseas o falta de aire. Suspende actividad y llama al 123.'],['🧠','ACV | FAST','Cara caída, debilidad de brazo, dificultad para hablar: anota hora de inicio y llama al 123. No dar comida, bebida ni medicamentos.']],n:['🚑','No traslades conduciendo tú si hay ambulancia disponible. Sigue indicaciones del operador.'],w:1},
+{h:'Alergia grave y exposición a sustancias',s:'Identifica el desencadenante y evita una segunda exposición.',c:[['🐝','Anafilaxia','Hinchazón de lengua o garganta, dificultad respiratoria, desmayo o reacción generalizada: 123. Ayuda con autoinyector de adrenalina prescrito si la persona lo tiene y sabes asistir.'],['🧪','Químicos / intoxicación','Aléjate de vapores. No provoques vómito ni neutralices sustancias. En contacto con piel u ojos, enjuaga abundantemente y consulta emergencias/centro toxicológico.']]},
+{h:'Respuesta organizada en la empresa',s:'La emergencia se resuelve mejor cuando cada persona conoce su rol.',c:[['🧑‍⚕️','Primer respondiente','Seguridad, evaluación y cuidados básicos'],['📞','Llamada de emergencia','123, datos claros y comunicación'],['🚪','Control de acceso','Abrir puerta, guiar ambulancia'],['🦺','Brigada / SST','Activar protocolo, equipo y registro']],n:['💡','Cada empresa debe adaptar estos pasos a su plan de emergencias, sedes y riesgos específicos.']},
+{t:'chk',h:'Botiquín y preparación',s:'Un botiquín útil está identificado, accesible, completo y revisado.',l:['Guantes desechables, gasas estériles, apósitos y vendas.','Cinta adhesiva, tijeras de punta roma, solución para irrigación y bolsa para residuos.','Manta térmica, compresa fría instantánea y barrera para ventilación si se dispone.','Revisar fechas, inventario, ubicación, señalización y responsables.','No incluir medicamentos de uso libre para administrar indiscriminadamente.']},
+{t:'quiz',h:'Caso práctico | ¿Qué harías?',s:'En una reunión, un compañero cae al suelo y no responde.'},
+{t:'num',h:'Cinco mensajes para recordar',s:'No necesitas ser experto para iniciar una respuesta segura.',l:['Primero, seguridad de la escena.','Activa el 123 temprano y comunica con claridad.','Si no responde y no respira normalmente: RCP + DEA.','Controla hemorragias con presión directa; no improvises procedimientos.','Acompaña, observa y entrega información a los profesionales.']},
+{h:'Referencias y actualización',s:'Material educativo general. Adaptar a protocolos de la empresa y formación práctica certificada.',l:['American Heart Association. 2025 Guidelines for CPR and Emergency Cardiovascular Care — Adult Basic Life Support.','American Heart Association & American Red Cross. 2024 Focused Update for First Aid.','European Resuscitation Council. Guidelines 2025 — First Aid.','Colombia: línea única nacional de emergencias 123.'],n:['⚠️','Las maniobras deben practicarse con instructor y maniquí; esta presentación no sustituye certificación.'],w:1}
+];
+var $=function(i){return document.getElementById(i)},st=$('stage'),cur=0,tm=null,ac=null,bpm=110;
+function R(x){
+ var k=0,a=function(c){return 'class="a '+(c||'')+'" style="--i:'+(k++)+'"'},o='',i;
+ if(x.t=='cover')return '<div class="sl cover"><div '+a('cross')+'></div><svg '+a('ecg')+' viewBox="0 0 600 100"><path d="M0 50H120L140 50L155 12L175 90L190 50H300L320 50L335 12L355 90L370 50H480L500 50L515 12L535 90L550 50H600"/></svg><h1 '+a()+'>PRIMEROS<br>AUXILIOS</h1><p '+a('sub')+' style="font-weight:700;color:var(--red)">Actuar a tiempo puede salvar una vida</p><p '+a('sub')+'>Capacitación para funcionarios y equipos de trabajo</p><span '+a('chip')+'>⏱ Duración: 60 minutos</span><div '+a('pres')+'><small>Presenta</small><b>Janeth Narváez</b><div style="color:var(--mut)">Enfermera profesional</div></div></div>';
+ o='<h2 '+a()+'>'+x.h+'</h2><p '+a('sub'+(x.sw?' w':''))+'>'+x.s+'</p>';
+ if(x.t=='time'){
+  o+='<div '+a('seg')+'>'+x.l.map(function(m){return '<i style="flex:'+m[0]+'" title="'+m[1]+'"></i>'}).join('')+'</div><ul '+a('tl')+'>'+x.l.map(function(m){return '<li><b>'+m[1]+'</b>'+m[2]+'</li>'}).join('')+'</ul>';
+ }else if(x.t=='cpr'){
+  o+='<div '+a('stats')+'><div class="stat"><b>100–120</b><span>compresiones por minuto</span></div><div class="stat"><b>5–6 cm</b><span>profundidad aproximada</span></div></div>'+
+  '<ul '+a('l')+'><li>Permite que el pecho se reexpanda por completo.</li><li>Minimiza interrupciones. Superficie firme.</li><li>RCP: 30 compresiones y 2 ventilaciones si estás entrenado.</li></ul>'+
+  '<div '+a('heart')+' id="hr" style="--d:'+(60/bpm)+'s">❤️</div><div '+a('ctl')+'><span>Ritmo: <b id="bv">'+bpm+'</b> / min</span><input type="range" id="bs" min="100" max="120" value="'+bpm+'"><button class="btn" data-snd="1">🔈 Metrónomo</button></div>';
+ }else if(x.t=='quiz'){
+  o+='<p '+a('sub')+' style="color:var(--tx);font-weight:700">¿Cuál es el orden correcto?</p><div '+a()+'>'+['A. Darle agua','B. Revisar seguridad, comprobar respuesta y respiración, pedir 123 y DEA','C. Levantarlo y sentarlo','D. Esperar unos minutos'].map(function(q,j){return '<button class="opt" data-o="'+(j==1?1:0)+'">'+q+'</button>'}).join('')+'<button class="btn" data-rev="1">Ver respuesta</button></div><div id="ans" class="ans"><div class="note"><b>Respuesta: B</b><br>Seguridad → respuesta/respiración → activar 123 y pedir DEA → RCP si no respira normalmente → usar DEA en cuanto llegue.</div></div>';
+ }else if(x.t=='call'){
+  o+='<div class="call"><div '+a('n123')+'>123</div><ul '+a('l')+'>'+x.l.map(function(q){return '<li>'+q+'</li>'}).join('')+'</ul></div>';
+ }else if(x.t=='num'){
+  o+='<ul '+a('l num')+'>'+x.l.map(function(q,j){return '<li><b>'+(j+1)+'</b>'+q+'</li>'}).join('')+'</ul>';
+ }else if(x.t=='chk'){
+  o+='<div '+a('pg')+'><i id="pgi"></i></div><ul '+a('l chk')+'>'+x.l.map(function(q){return '<li>'+q+'</li>'}).join('')+'</ul><div id="rdy" class="note" style="display:none">✅ Botiquín listo: identificado, accesible, completo y revisado.</div>';
+ }else if(x.c){
+  o+='<div '+a('grid')+'>'+x.c.map(function(c){return '<div class="card" tabindex="0"><div class="ic">'+c[0]+'</div><h3>'+c[1]+'</h3><p>'+c[2]+'</p></div>'}).join('')+'</div>';
+ }else if(x.l){
+  o+='<ul '+a('l')+'>'+x.l.map(function(q){return '<li>'+q+'</li>'}).join('')+'</ul>';
+ }
+ if(x.n)o+='<div '+a('note'+(x.w?' w':''))+'>'+x.n[0]+' '+x.n[1]+'</div>';
+ return '<div class="sl">'+o+'</div>';
+}
+function stop(){clearInterval(tm);tm=null}
+function go(n){
+ cur=Math.max(0,Math.min(S.length-1,n));stop();
+ st.innerHTML=R(S[cur]);st.scrollTop=0;
+ $('pb').style.width=((cur+1)/S.length*100)+'%';
+ $('ct').textContent=(cur+1)+'/'+S.length;
+ try{history.replaceState(null,'','#s'+(cur+1))}catch(e){}
+}
+function beat(){if(!ac)return;var o=ac.createOscillator(),g=ac.createGain();o.frequency.value=880;g.gain.value=.15;o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+.06)}
+st.addEventListener('click',function(e){
+ var t=e.target,b;
+ if(b=t.closest('[data-o]')){var ok=b.dataset.o=='1';b.classList.add(ok?'ok':'bad');if(ok)$('ans').classList.add('show');return}
+ if(t.closest('[data-rev]')){$('ans').classList.add('show');st.querySelector('[data-o="1"]').classList.add('ok');return}
+ if(b=t.closest('[data-snd]')){
+  if(tm){stop();b.textContent='🔈 Metrónomo'}else{ac=ac||new(window.AudioContext||window.webkitAudioContext)();tm=setInterval(beat,60000/bpm);b.textContent='🔊 Sonando…'}return}
+ if(b=t.closest('.chk li')){b.classList.toggle('on');var all=st.querySelectorAll('.chk li'),on=st.querySelectorAll('.chk li.on');$('pgi').style.width=(on.length/all.length*100)+'%';$('rdy').style.display=on.length==all.length?'block':'none';return}
+ if(b=t.closest('.tl li,.card,ul.l li'))b.classList.toggle('on');
+});
+st.addEventListener('input',function(e){
+ if(e.target.id=='bs'){bpm=+e.target.value;$('bv').textContent=bpm;$('hr').style.setProperty('--d',(60/bpm)+'s');if(tm){clearInterval(tm);tm=setInterval(beat,60000/bpm)}}
+});
+$('pv').onclick=function(){go(cur-1)};$('nx').onclick=function(){go(cur+1)};
+document.addEventListener('keydown',function(e){
+ if(e.target.tagName=='INPUT')return;
+ if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1){e.preventDefault();go(cur+1)}
+ else if(['ArrowLeft','PageUp'].indexOf(e.key)>-1)go(cur-1);
+ else if(e.key=='Home')go(0);else if(e.key=='End')go(S.length-1);
+ else if(e.key=='Escape')$('menu').classList.remove('show');
+});
+var sx=0,sy=0;
+st.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+st.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)go(cur+(dx<0?1:-1))},{passive:true});
+$('mg').innerHTML=S.map(function(x,i){return '<button data-g="'+i+'"><b>'+(i+1)+'</b>'+(x.h||'Portada')+'</button>'}).join('');
+$('mn').onclick=function(){var m=$('menu');[].forEach.call(m.querySelectorAll('button'),function(b,i){b.className=i==cur?'c':''});m.classList.toggle('show')};
+$('menu').onclick=function(e){var b=e.target.closest('[data-g]');if(b){go(+b.dataset.g);$('menu').classList.remove('show')}else if(e.target.id=='menu')$('menu').classList.remove('show')};
+$('th').onclick=function(){var r=document.documentElement,d=getComputedStyle(r).getPropertyValue('--bg').trim().toLowerCase()=='#07181b';r.setAttribute('data-theme',d?'light':'dark')};
+$('fs').onclick=function(){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}catch(e){}};
+var m=/^#s(\d+)$/.exec(location.hash);go(m?+m[1]-1:0);
+</script>
+</body>
+</html>
